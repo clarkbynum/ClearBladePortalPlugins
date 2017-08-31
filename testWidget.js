@@ -69,6 +69,27 @@ CB_PORTAL.registerWidget({
             name: "multiObjectVal",
             display_name: "Multiple Objects Value",
             type: "MULTI_OBJECT_SETTING_TYPE",
+            objectShape: [
+                {
+                    "name": "label",
+                    "display_name": "Label",
+                    "type": "text"
+                },
+                {
+                    "name": "orientation",
+                    "display_name": "Orientation",
+                    "type": "option",
+                    "options": [{"name": "left", "value": "left"}, {"name": "right", "value": "right"}],
+                    "default_value": "right"
+                },
+                {
+                    "name": "paddingTop",
+                    "display_name": "Top Padding",
+                    "type": "number",
+                    "default_value": 0
+                },
+                {"name": "paddingBottom", "display_name": "Bottom Padding", "type": "number", "default_value": 0}
+            ],
             default_value: [
                 {"name": "label", "display_name": "Label", "type": "text"},
                 {
