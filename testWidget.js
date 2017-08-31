@@ -1,6 +1,7 @@
 function PluginTest(settings, updateCallback) {
     this.allInfo = {settings: settings};
     this.render = function (element) {
+        console.log('render', element);
         return `Stringified Info: <div>${JSON.stringify(this.allInfo)}</div>`;
     }
 
