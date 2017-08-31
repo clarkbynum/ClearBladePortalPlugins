@@ -7,8 +7,8 @@ function PluginTest(settings, updateCallback) {
         Number Value: ${this.allInfo.settings.numberVal}
         Color Value: ${this.allInfo.settings.colorVal}
         Option Value: ${this.allInfo.settings.optionVal}
-        Multi Object Value: ${this.allInfo.settings.multiObjectVal}
-        Data Value: ${this.allInfo.data.dataVal}
+        Multi Object Value: ${JSON.stringify(this.allInfo.settings.multiObjectVal)}
+        Data Value: ${this.allInfo.data ? JSON.stringify(this.allInfo.data.dataVal) : ''}
         `;
     }
 
