@@ -1,12 +1,15 @@
 function PluginTest(settings, updateCallback) {
     this.allInfo = {settings: settings};
     this.render = function (element) {
-        console.log('render', element);
-        var p = document.createElement("p")
-        p.innerHTML = "haylo!!!";
-        element.appendChild(p)
-        return element;
-        //return `Stringified Info: <div>${JSON.stringify(this.allInfo)}</div>`;
+        return `Stringified Info: 
+        Text Value: ${this.allInfo.settings.textVal}
+        Boolean Value: ${this.allInfo.settings.booleanVal}
+        Number Value: ${this.allInfo.settings.numberVal}
+        Color Value: ${this.allInfo.settings.colorVal}
+        Option Value: ${this.allInfo.settings.optionVal}
+        Multi Object Value: ${this.allInfo.settings.multiObjectVal}
+        Data Value: ${this.allInfo.data.dataVal}
+        `;
     }
 
     this.onSettingsChanged = function (settings) {
