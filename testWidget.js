@@ -1,6 +1,7 @@
 function PluginTest(settings, updateCallback) {
     this.allInfo = {settings: settings};
     this.render = function (element) {
+        console.log('render');
         return `Stringified Info: 
         Text Value: ${this.allInfo.settings.textVal}
         Boolean Value: ${this.allInfo.settings.booleanVal}
