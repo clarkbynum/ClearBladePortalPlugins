@@ -34,7 +34,7 @@ function PluginDatasourceTest(settings, updateCallback, errorCallback) {
             updateCallback(jsonResp);
     }))
     .catch((e) => {
-            errorCallback(e);
+            errorCallback("Failed to search", e);
     })
     }
 
@@ -46,8 +46,8 @@ function PluginDatasourceTest(settings, updateCallback, errorCallback) {
 }
 
 CB_PORTAL.registerDatasource({
-    type_name: "CB_PLUGIN_DATASOURCE",
-    display_name: "Plugin Datasource",
+    type_name: "CB_PLUGIN_DATASOURCEEEEE",
+    display_name: "Plugin Datasource Internal",
     group: "ClearBlade Plugins",
     description: "A datasource as a plugin.",
     class: PluginDatasourceTest,
@@ -112,3 +112,5 @@ CB_PORTAL.registerDatasource({
         },
     ]
 });
+
+export default PluginDatasourceTest;
