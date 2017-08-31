@@ -22,7 +22,6 @@ function PluginTest (settings, updateCallback) {
   CB_PORTAL.registerWidget({
       type_name: "MyTestWidget",
       display_name: "My Test Widget",
-      group: "Basic",
       plugin: true,
       class: PluginTest,
       settings: [
