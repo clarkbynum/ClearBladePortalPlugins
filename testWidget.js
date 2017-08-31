@@ -5,6 +5,7 @@ function PluginTest(settings, updateCallback) {
         var p = document.createElement("p")
         p.innerHTML = "haylo!!!";
         element.appendChild(p)
+        return element;
         //return `Stringified Info: <div>${JSON.stringify(this.allInfo)}</div>`;
     }
 
