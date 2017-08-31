@@ -2,7 +2,10 @@ function PluginTest(settings, updateCallback) {
     this.allInfo = {settings: settings};
     this.render = function (element) {
         console.log('render', element);
-        return `Stringified Info: <div>${JSON.stringify(this.allInfo)}</div>`;
+        var p = document.createElement("p")
+        p.innerHTML = "haylo!!!";
+        element.appendChild(p)
+        //return `Stringified Info: <div>${JSON.stringify(this.allInfo)}</div>`;
     }
 
     this.onSettingsChanged = function (settings) {
