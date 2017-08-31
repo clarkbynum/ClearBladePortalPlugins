@@ -69,8 +69,6 @@ CB_PORTAL.registerWidget({
             name: "multiObjectVal",
             display_name: "Multiple Objects Value",
             type: "MULTI_OBJECT_SETTING_TYPE",
-            minLength: 1,
-            maxLength: 5,
             objectShape: [
                 {
                     "name": "label",
