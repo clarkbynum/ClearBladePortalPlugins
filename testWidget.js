@@ -33,6 +33,10 @@ CB_PORTAL.registerWidget({
     display_name: "My Test Widget",
     plugin: true,
     class: PluginTest,
+    external_scripts: [
+        "https://code.jquery.com/jquery-3.2.1.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"
+    ],
     settings: [
         {
             name: "textVal",
