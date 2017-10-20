@@ -112,5 +112,3 @@ CB_PORTAL.registerDatasource({
         },
     ]
 });
-
-export default PluginDatasourceTest;
