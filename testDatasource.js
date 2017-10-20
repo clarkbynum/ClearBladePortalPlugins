@@ -50,6 +50,7 @@ CB_PORTAL.registerDatasource({
     type_name: "CB_PLUGIN_DATASOURCEEEEE",
     display_name: "Plugin Datasource Internal",
     group: "ClearBlade Plugins",
+    plugin: true,
     description: "A datasource as a plugin.",
     class: PluginDatasourceTest,
     settings: [
