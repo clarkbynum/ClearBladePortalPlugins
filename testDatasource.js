@@ -20,9 +20,6 @@ function PluginDatasourceTest(settings, updateCallback, errorCallback) {
     }
 
     function handleErrors(response) {
-        response.json().then((data) => {
-            console.log('and then', data);
-        })
         if (!response.ok) {
             throw Error(response.statusText);
         }
