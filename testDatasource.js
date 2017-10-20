@@ -23,6 +23,9 @@ function PluginDatasourceTest(settings, updateCallback, errorCallback) {
         if (!response.ok) {
             throw Error(response.statusText);
         }
+        response.json().then((data) => {
+            console.log('and then', data);
+        })
         return response;
     }
 
